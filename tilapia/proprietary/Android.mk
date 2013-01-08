@@ -16,6 +16,19 @@ LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),tilapia)
 
+#--------------------------------------------------------------
+#  Radio
+#--------------------------------------------------------------
+include $(CLEAR_VARS)
+LOCAL_MODULE := libxgold-ril
+LOCAL_SRC_FILES := libxgold-ril.so
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_PATH := $(TARGET_OUT)/lib
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_OWNER := asus
+include $(BUILD_PREBUILT)
+
 include $(CLEAR_VARS)
 LOCAL_MODULE := btmacreader
 LOCAL_SRC_FILES := btmacreader
@@ -80,16 +93,6 @@ LOCAL_SRC_FILES := libwvm.so
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/lib
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_OWNER := asus
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := libxgold-ril
-LOCAL_SRC_FILES := libxgold-ril.so
-LOCAL_MODULE_SUFFIX := .so
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_PATH := $(TARGET_OUT)/lib
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_OWNER := asus
 include $(BUILD_PREBUILT)

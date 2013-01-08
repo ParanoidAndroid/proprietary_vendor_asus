@@ -20,4 +20,4 @@ PRODUCT_PACKAGES := \
     sensors.grouper \
     libsensors.lightsensor \
     libdrmwvmplugin \
-    libwvm
+    libwvm 

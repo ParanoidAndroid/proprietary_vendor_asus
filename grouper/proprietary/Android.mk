@@ -14,7 +14,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),grouper)
+#ifeq ($(TARGET_DEVICE),grouper)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := btmacreader
@@ -84,4 +84,4 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_OWNER := asus
 include $(BUILD_PREBUILT)
 
-endif
+#endif
