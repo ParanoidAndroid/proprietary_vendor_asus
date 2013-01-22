@@ -15,5 +15,10 @@
 LOCAL_STEM := grouper/BoardConfigPartial.mk
 
 -include vendor/asus/tilapia/BoardConfigPartial.mk
--include vendor/asus/grouper/BoardConfigVendor.mk
-
+-include vendor/broadcom/$(LOCAL_STEM)
+-include vendor/elan/$(LOCAL_STEM)
+-include vendor/invensense/$(LOCAL_STEM)
+-include vendor/nvidia/$(LOCAL_STEM)
+-include vendor/nxp/$(LOCAL_STEM)
+-include vendor/trusted_logic/$(LOCAL_STEM)
+-include vendor/widevine/$(LOCAL_STEM)
